@@ -1,17 +1,19 @@
+const priceInput = document.getElementById("itemPrice");
+const costInput = document.getElementById("wholesaleCost");
+const qtyInput = document.getElementById("quantitySold");
+const resultEl = document.getElementById("result");
 
-const button = document.getElementById("Calc-Py");
+let chart; // this will be our graph later
 
-button.addEventListener("click", function () {
-  const a = Number(document.getElementById("a").value);
-  const b = Number(document.getElementById("b").value);
+document.getElementById("calcBtn").addEventListener("click", () => {
+    const price = Number(priceInput.value);
+    const cost = Number(costInput.value);
+    const qty = Number(qtyInput.value);
 
-  if (!a || !b) {
-    document.getElementById("result").textContent = "Please enter both numbers.";
-    return;
-  }
+    const profitPerItem = price - cost;
+    const totalProfit = profitPerItem * qty;
 
-  const c = Math.sqrt(a * a + b * b);
+    resultEl.textContent = `Total Profit: $${totalProfit}`;
 
-  document.getElementById("result").textContent =
-    "Hypotenuse: " + c.toFixed(2);
+    drawChart(profitPerItem, qty);
 });
