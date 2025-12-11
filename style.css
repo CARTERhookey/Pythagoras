@@ -19,3 +19,34 @@
   font-family: Arial, sans serif;
   font-size: 20px;
 }
+
+body.night {
+  background-color: #0d0d2b; /* deep night blue */
+  color: #ffffff; /* glowing text */
+}
+
+body.night h1, 
+body.night h2, 
+body.night h3, 
+body.night p {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+body.night img {
+  filter: brightness(0.7) drop-shadow(0 0 10px #fff);
+}
+body.night {
+  background-color: #0d0d2b; /* deep night blue */
+  color: #ffffff; /* glowing text */
+}
+
+body.night h1, 
+body.night h2, 
+body.night h3, 
+body.night p {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+body.night img {
+  filter: brightness(0.7) drop-shadow(0 0 10px #fff);
+}
