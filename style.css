@@ -80,6 +80,10 @@ img {
   font-family: Roboto, Oswald;
 }
 
+summary:hover {
+  transform: scale(1.5);
+}
+
 /* FAQ section */
 details {
   max-width: 700px;
