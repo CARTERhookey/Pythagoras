@@ -81,11 +81,11 @@ img {
 }
 
 deatils:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 summary:hover {
-  transform: scale(1.5);
+  transform: scale(1.132);
 }
 
 /* FAQ section */
